@@ -1,12 +1,9 @@
-# With Parameter With Returntype
+# Default Arg
 
-def add(a,b):
-	"""This is sum Function"""
-	return a*b
-	
-	
+def add(x,y,a=0,b=0):
+	print("Sum is ",(a+b))
+	return a+b
 
-
-#print(add(20,20))
-multi= add(20,10)
-print(multi)
+print(add(10,30))
+print(add(10,30,89,90))
+print(add(10,30,89))

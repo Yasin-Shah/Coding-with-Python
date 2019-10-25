@@ -1,11 +1,10 @@
-# No Parameter With Returntype
+# Keyword Arg
 
-def show():
-	"""This is sum Function"""
-	return "Hello"
-	
+def fullName(fname,lname):
+	print("",fname,lname)
 	
 
+fullName("Sumit","Jain")
+fullName("Jain","Sumit")
+fullName(lname="Jain",fname="Sumit")
 
-data= show()
-print(data)

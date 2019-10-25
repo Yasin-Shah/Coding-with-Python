@@ -1,9 +1,9 @@
-# With Parameter Without Returntype
+# Default Arg
 
-def add(a,b):
-	"""This is sum Function"""
-	print(a+b)
-	
-add(23,45)
-add("Hello"," Python")
-add(23,67.90)
+def add(a=0,b=0):
+	print("Sum is ",(a+b))
+	return a+b
+
+print(add(10,30))
+print(add(45))
+print(add())
