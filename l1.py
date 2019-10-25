@@ -1,32 +1,14 @@
-# List
+l1=[i for i in range(10)]
+print(l1)
 
-l=[]
-print(l)
-print(type(l))
+l2=[i*i for i in range(10)]
+print(l2)
 
+l3=[i+i for i in range(10)]
+print(l3)
 
-l= list()
-print(l)
-print(type(l))
+l4=[i*5 for i in range(10)]
+print(l4)
 
-
-l=[10,20,30,40]
-print(l)
-print(type(l))
-
-
-l= list([1,2,3,4])
-print(l)
-print(type(l))
-
-l= list((1,2,3,4))
-print(l)
-print(type(l))
-
-l= list("abcd")
-print(l)
-print(type(l))
-
-l=["abcd"]
-print(l)
-print(type(l))
+l1=[i for i in range(20) if i%2==0]
+print(l1)
