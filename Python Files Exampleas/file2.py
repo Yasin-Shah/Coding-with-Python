@@ -1,0 +1,10 @@
+f=open("xyz.txt","a+")
+f.write("python is oop \n")
+f.write("python is functional \n")
+f.write("python is script")
+f.write("python is modular")
+print("data written")
+f.seek(0)
+print(f.read())
+f.close()
+
