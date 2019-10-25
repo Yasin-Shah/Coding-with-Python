@@ -1,20 +1,16 @@
-d1= {}
-print("Dict is ",d1)
-print("Type is ",type(d1))
-
-d2= dict()
-print("Dict is ",d2)
-print("Type is ",type(d2))
+# Nested Dictonary
+Student= [{'name':"Nikku", 'age':21, 'address':'indore',
+'marks':{'maths':78,'phy':67,'chem':45}},
+{'name':"Cikku", 'age':18, 'address':'bhopal',
+'marks':{'maths':90,'phy':77,'chem':95}}]
 
 
-p= {'name':"Nikku", 'age':21, 'address':'indore','marks':[67,89,67,45]}
-print("Dict is ",p)
-print("Type is ",type(p))
+for d in Student:
+ for k1,v1 in d.items():
+  if type(v1)==type({}):
+   for k2,v2 in v1.items():
+    print(k2,"---",v2)
+  else:
+   print(k1,"--",v1)
 
-d2= dict({67:45,None:78,'Hello':56+89j})
-print("Dict is ",d2)
-print("Type is ",type(d2))
 
-d2= dict([(67,45),(False,78),('Hello',56+89j)])
-print("Dict is ",d2)
-print("Type is ",type(d2))
