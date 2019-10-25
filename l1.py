@@ -1,14 +1,13 @@
-l1=[i for i in range(10)]
+l1=[24,67,56,45,89]
 print(l1)
-
-l2=[i*i for i in range(10)]
+l2=l1.copy() # Return shallow copy of list
+print(l2)
+l2.append(12)
 print(l2)
 
-l3=[i+i for i in range(10)]
-print(l3)
 
-l4=[i*5 for i in range(10)]
-print(l4)
+l2.sort()
+print(l2)
 
-l1=[i for i in range(20) if i%2==0]
+l1.reverse()
 print(l1)

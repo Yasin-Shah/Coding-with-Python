@@ -1,16 +1,18 @@
+# List Functions
+l1=[24,67,56,45,89]
+print(l1)
+print("Length is ",len(l1))
+print("Max is ",max(l1))
+print("Min is ",min(l1))
 
-l=[10,20,30,40,10,20,30]
-print(l)
-print(type(l))
+l1= [1,2]
+l2=[3,1]
+print(cmp(l1,l2))  #-1,0,1
 
-l=[10,20,33.67,67+4j,True,"Abc",None]
-print(l)
-print(type(l))
+l1= [3,2,3]
+l2=[3,1]
+print(cmp(l1,l2))
 
-l=[10,20,33.67,67+4j,[1,3,5],(1,90,45)]
-print(l)
-print(type(l))
-
-
-
-
+l1= [3,1]
+l2=[3,1]
+print(cmp(l1,l2))
