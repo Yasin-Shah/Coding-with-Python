@@ -1,10 +1,10 @@
-d1= {10:20,30:45}
-print(d1)
-print(d1.items())
-
-for data in d1.items():
- print(data)
+print("Create a dictonary: ")
 
 
-for k1,v1 in d1.items():
- print(k1,"---",v1)
+d=dict()
+for i in range(5):
+	d[i]=input("Enter value: ") 
+print(d)
+
+
+

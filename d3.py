@@ -1,21 +1,9 @@
-p= {'name':"Nikku", 'age':21, 'address':'indore',
-'marks':{'maths':78,'phy':67,'chem':45}}
+print("Create a dictonary: ")
 
-print(p)
-print(p.keys())
 
-print(p.values())
-
-print(p.get('name'))
-print(p.pop('name'))
-print(p)
-
-print(p.popitem())
-print(p)
-
-del p['age']
-print(p)
-
-#del p
-p.clear()
-print(p)
+d=dict()
+for i in range(5):
+	key= input("Enter key: ")
+	value=input("Enter value: ") 
+	d[key]=value
+print(d)
